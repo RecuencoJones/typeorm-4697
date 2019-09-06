@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "show": "typeorm migration:show",
+    "seed": "npm run build && typeorm migration:run -f ormconfig.seed.yml",
+    "migrate": "npm run build && typeorm migration:run",
+    "revert": "npm run build && typeorm migration:revert"
+  },
+  "dependencies": {
+    "mongodb": "3.2.7",
+    "typeorm": "0.2.18"
+  },
+  "devDependencies": {
+    "@types/mongodb": "3.3.1",
+    "@types/node": "12.7.2",
+    "build-tools-typescript": "1.2.0"
+  }
+}

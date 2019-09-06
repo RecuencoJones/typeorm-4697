@@ -1,0 +1,11 @@
+{
+  "extends": "build-tools-typescript",
+  "compilerOptions": {
+    "target": "es2017"
+  },
+  "include": [
+    "entities/**/*.ts",
+    "seeds/**/*.ts",
+    "migrations/**/*.ts"
+  ]
+}

@@ -1,0 +1,13 @@
+default:
+  type: mongodb
+  host: localhost
+  port: 27017
+  database: test-migrations
+  synchronize: true
+  entities:
+  - entities/**/*.entity.js
+  migrations:
+  - seeds/*.js
+  migrationsTableName: seeds
+  extra:
+    useNewUrlParser: true
